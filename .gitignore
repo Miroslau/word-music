@@ -1,6 +1,5 @@
 # compiled output
 /client
-/mongo-db
 /server
 
 # Logs
