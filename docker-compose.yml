@@ -1,0 +1,22 @@
+version: "3"
+
+services:
+  backend:
+    container_name: backend
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    volumes:
+      - ./server/src:/app/src
+    ports:
+      - 5000:5000
+
+  mongo:
+    image: mongo
+    container_name: mongo
+    restart: on-failure
+    ports:
+      - 27018:27017
+    command: mongod
+    volumes:
+      - ./mongo-db:/data/db
