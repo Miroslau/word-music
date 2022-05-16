@@ -4,12 +4,12 @@ services:
   backend:
     container_name: backend
     build:
-      context: ./server
+      context: ./worl-music-server
       dockerfile: Dockerfile
     volumes:
-      - ./server/src:/app/src
+      - ./worl-music-server/src:/app/src
     ports:
-      - 5000:5000
+      - 5555:5000
 
   mongo:
     image: mongo
