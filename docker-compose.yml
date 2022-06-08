@@ -6,6 +6,8 @@ services:
     build:
       context: ./worl-music-server
       dockerfile: Dockerfile
+    environment:
+      CHOKIDAR_USEPOLLING: "true"
     volumes:
       - ./worl-music-server/src:/app/src
     ports:
