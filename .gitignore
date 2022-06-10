@@ -1,6 +1,8 @@
 # compiled output
 /client
 /worl-music-server
+/mongo-db
+/postgres-data
 
 # Logs
 logs
