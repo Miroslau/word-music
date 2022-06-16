@@ -1,5 +1,6 @@
 # compiled output
 /client
+.env
 /worl-music-server
 /mongo-db
 /postgres-data
